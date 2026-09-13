@@ -1,0 +1,120 @@
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  width: 380px;
+  font-family: system-ui, "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  color: #111827;
+  background: #fff;
+  padding: 14px 16px 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+h1 { font-size: 15px; }
+
+#badge { color: #6b7280; font-size: 12px; }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.item-main { flex: 1; min-width: 0; }
+
+.url {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 11px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+
+.btn {
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.btn:hover { background: #f3f4f6; }
+.btn.open { background: #10b981; border-color: #10b981; color: #fff; }
+.btn.open:hover { background: #059669; }
+
+.empty { text-align: center; color: #9ca3af; padding: 18px 0; }
+
+.actions { margin: 10px 0; }
+
+#checkNow {
+  width: 100%;
+  padding: 7px 0;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+#checkNow:hover { background: #1f2937; }
+
+.settings {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+  display: grid;
+  gap: 7px;
+  color: #374151;
+}
+
+.settings label { display: flex; align-items: center; gap: 6px; }
+
+.settings input[type="number"] { margin-left: auto; }
+
+.settings input[type="number"] {
+  width: 72px;
+  padding: 3px 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #111827;
+}
+.settings input[type="number"]:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+.settings select {
+  padding: 3px 4px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 12px;
+  background: #fff;
+  color: #111827;
+}
+
+footer {
+  margin-top: 8px;
+  color: #9ca3af;
+  font-size: 11px;
+  min-height: 14px;
+}

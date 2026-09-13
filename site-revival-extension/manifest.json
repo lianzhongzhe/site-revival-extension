@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "网站恢复助手",
+  "description": "网页打不开时自动保存网址与表单内容，网站恢复后自动重新访问并还原表单。",
+  "version": "1.0.0",
+  "permissions": ["storage", "alarms", "tabs", "notifications", "webNavigation"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "网站恢复助手",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

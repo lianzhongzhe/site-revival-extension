@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>网站恢复助手</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>网站恢复助手</h1>
+    <span id="badge"></span>
+  </header>
+
+  <section id="list"></section>
+  <div id="empty" class="empty">暂无待恢复的网页</div>
+
+  <section class="actions">
+    <button id="checkNow">立即检查</button>
+  </section>
+
+  <section class="settings">
+    <label><input type="checkbox" id="autoReopen" /> 恢复后自动重新打开网页</label>
+    <label><input type="checkbox" id="notify" /> 桌面通知提醒</label>
+    <label>检查间隔
+      <input type="number" id="interval" min="1" step="1" />
+      <select id="unit">
+        <option value="min">分钟</option>
+        <option value="sec">秒</option>
+      </select>
+    </label>
+  </section>
+
+  <footer id="status">所有数据仅保存在本机浏览器</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
